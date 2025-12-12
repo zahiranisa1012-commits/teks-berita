@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Bahasa Indonesia - Teks Berita</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Halaman Login -->
+<div class="login-container" id="loginPage">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Masuk</button>
+    <p id="loginMessage"></p>
+</div>
+
+<!-- Halaman Utama -->
+<div class="main-container hidden" id="mainPage">
+
+    <header>
+        <h1>Pelajaran Bahasa Indonesia</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <section class="content">
+        <h2>Pemahaman Teks Berita</h2>
+        <p>
+            Teks berita adalah teks yang berisi laporan tentang suatu peristiwa 
+            yang sedang atau telah terjadi. Tujuan berita adalah memberikan 
+            informasi faktual kepada pembaca.
+        </p>
+
+        <h3>Contoh Teks Berita:</h3>
+        <div class="news-box">
+            <h4>Hujan Deras Sebabkan Banjir di Sejumlah Wilayah</h4>
+            <p>
+                Hujan deras yang mengguyur sejak pagi hari menyebabkan banjir 
+                di beberapa wilayah kota Bandung. Ketinggian air mencapai 50 cm 
+                dan menyebabkan kemacetan di beberapa titik.
+            </p>
+        </div>
+
+        <h3>Latihan Pemahaman</h3>
+        <p><b>Pertanyaan:</b> Apa penyebab banjir pada teks berita di atas?</p>
+        
+        <input type="text" id="jawaban" placeholder="Tulis jawabanmu...">
+        <button onclick="cekJawaban()">Cek Jawaban</button>
+        <p id="result"></p>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
